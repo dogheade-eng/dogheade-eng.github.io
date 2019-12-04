@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/regest.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            background-color: #87CEFA;
+        }
+
+        /*导航设置*/
+        .header {
+            width: 98%;
+            margin: 0 auto;
+            height: 4rem;
+            line-height: 4rem;
+
+        }
+
+        .header-nav__item {
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+            display: block;
+        }
+
+        .header-nav__item:hover {
+            font-size: 1.33rem;
+            background-color: #6495ED;
+        }
+
+        /*内容设置*/
+        .Content {
+            width: 98%;
+            margin: 0 auto;
+        }
+
+        /*信息部分设置*/
+        .information {
+            width: 100%;
+            height: 20rem;
+            background-image: url(images/1.jpg);
+        }
+
+        .data {
+            margin-left: 20%;
+            padding-top: 13rem;
+        }
+
+        .data div {
+            float: left;
+            margin-left: 2rem;
+        }
+
+        /*头像设置*/
+        .HeadPortrait {
+            width: 8rem;
+            height: 5rem;
+            overflow: hidden;
+        }
+
+        /*内容设置*/
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            background: #FFf;
+            height: auto;
+        }
+
+        .content-left {
+            width: 50%;
+        }
+
+        .content-left__item {
+            width: 80%;
+            margin: 0 auto;
+            height: 25rem;
+            padding: 5rem 5rem;
+        }
+
+
+        .content-keft__item-nav {
+            float: left;
+            margin-left: 1rem;
+            font-size: 1rem;
+            color: #B0C4DE;
+        }
+
+        .nav-1 {
+            margin-top: -0.5rem;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .article {
+            height: 22rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            font-size: 1.0rem;
+        }
+
+        .article:hover {
+            background: #D3D3D3;
+        }
+
+        .see {
+            margin-left: 2%;
+            color: aqua;
+            font-size: 1rem;
+        }
+
+        /*内容左边部分样式*/
+        .music {
+            width: 100%;
+            height: 30rem;
+            margin-top: 3rem;
+        }
+
+        /*媒体查询*/
+        @media all and (max-width: 1120px) {
+
+            /*隐藏音乐播放器*/
+            .content-right {
+                display: none;
+            }
+
+            /*头像内容设置*/
+            .information {
+                width: 100%;
+                height: 10rem;
+            }
+
+            .data {
+                margin-left: 0%;
+                padding-top: 2rem;
+            }
+
+            .HeadPortrait {
+                width: 6rem;
+                height: 5rem;
+            }
+
+            /*内容设置*/
+            .content {
+                width: 100%;
+            }
+
+            .content-left__item {
+                padding: 1rem 1rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .content-keft__item-nav {
+                float: left;
+                font-size: 0.2rem;
+                color: #B0C4DE;
+            }
+
+            .nav-1 {
+                font-size: 1rem;
+                color: black;
+            }
+            .article{
+                width: 100%;
+                font-size: 0.2rem;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header grid">
+        <div class="grid-cell-4"></div>
+        <div class="grid-cell-2">
+            <ul class="grid">
+                <li class="grid-cell-1"><a href="#" class="header-nav__item">首页</a></li>
+                <li class="grid-cell-1"><a href="#" class="header-nav__item">笔记</a></li>
+                <li class="grid-cell-1"><a href="#" class="header-nav__item">文章</a></li>
+                <li class="grid-cell-1"><a href="#" class="header-nav__item">图片</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="Content">
+        <div class="information">
+            <div class="data">
+                <div class="HeadPortrait">
+                    <img src="images/timg (1).jpg" alt="">
+                </div>
+                <div class="signature">
+                    <br>
+                    <a>昵称：烟笼寒水</a>
+                    <br>
+                    <br>
+                    <a>签名：就是一条废狗</a>
+                </div>
+            </div>
+        </div>
+        <div class="content grid">
+            <div class="content-left grid-cell-4">
+                <div class="content-left__item">
+                    <ul>
+                        <li class="content-keft__item-nav nav-1">类的构造函数</li>
+                        <li class="content-keft__item-nav">|</li>
+                        <li class="content-keft__item-nav">烟笼寒水</li>
+                        <li class="content-keft__item-nav">/</li>
+                        <li class="content-keft__item-nav">当前时间</li>
+                        <li class="content-keft__item-nav">/</li>
+                        <li class="content-keft__item-nav">C#</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <pre class="article">
+                            avaScript 类型转换
+                            Number() 转换为数字， String() 转换为字符串， Boolean() 转化为布尔值。
+                            
+                            JavaScript 数据类型
+                            在 JavaScript 中有 5 种不同的数据类型：
+                            
+                            string
+                            number
+                            boolean
+                            object
+                            function
+                            3 种对象类型：
+                            
+                            Object
+                            Date
+                            Array
+                            2 个不包含任何值的数据类型：
+                            
+                            null
+                            undefined
+                            typeof 操作符
+                            你可以使用 typeof 操作符来查看 JavaScript 变量的数据类型。
+                            
+                            实例
+                            typeof "John"                 // 返回 string 
+                            typeof 3.14                   // 返回 number
+                            typeof NaN                    // 返回 number
+                            typeof false                  // 返回 boolean
+                            typeof [1,2,3,4]              // 返回 object
+                            typeof {name:'John', age:34}  // 返回 object
+                            typeof new Date()             // 返回 object
+                            typeof function () {}         // 返回 function
+                            typeof myCar                  // 返回 undefined (如果 myCar 没有声明)
+                            typeof null                   // 返回 object
+                            
+                            尝试一下 »
+                            请注意：
+                            
+                            NaN 的数据类型是 number
+                            数组(Array)的数据类型是 object
+                            日期(Date)的数据类型为 object
+                            null 的数据类型是 object
+                            未定义变量的数据类型为 undefined
+                            如果对象是 JavaScript Array 或 JavaScript Date ，我们就无法通过 typeof 来判断他们的类型，因为都是 返回 object。
+                            
+                            constructor 属性
+                            constructor 属性返回所有 JavaScript 变量的构造函数。
+                            
+                            实例
+                            "John".constructor                 // 返回函数 String()  { [native code] }
+                            (3.14).constructor                 // 返回函数 Number()  { [native code] }
+                            false.constructor                  // 返回函数 Boolean() { [native code] }
+                            [1,2,3,4].constructor              // 返回函数 Array()   { [native code] }
+                            {name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
+                            new Date().constructor             // 返回函数 Date()    { [native code] }
+                            function () {}.constructor         // 返回函数 Function(){ [native code] }
+                            
+                            尝试一下 »
+                            你可以使用 constructor 属性来查看对象是否为数组 (包含字符串 "Array"):
+                            
+                            实例
+                            function isArray(myArray) {
+                                return myArray.constructor.toString().indexOf("Array") > -1;
+                            }
+                    </pre>
+                    <a href="#" class="see">查看全部内容》</a>
+                </div>
+                <hr>
+                <div class="content-left__item">
+                    <ul>
+                        <li class="content-keft__item-nav nav-1">类的构造函数</li>
+                        <li class="content-keft__item-nav">|</li>
+                        <li class="content-keft__item-nav">烟笼寒水</li>
+                        <li class="content-keft__item-nav">/</li>
+                        <li class="content-keft__item-nav">当前时间</li>
+                        <li class="content-keft__item-nav">/</li>
+                        <li class="content-keft__item-nav">C#</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <pre class="article">
+                            avaScript 类型转换
+                            Number() 转换为数字， String() 转换为字符串， Boolean() 转化为布尔值。
+                            
+                            JavaScript 数据类型
+                            在 JavaScript 中有 5 种不同的数据类型：
+                            
+                            string
+                            number
+                            boolean
+                            object
+                            function
+                            3 种对象类型：
+                            
+                            Object
+                            Date
+                            Array
+                            2 个不包含任何值的数据类型：
+                            
+                            null
+                            undefined
+                            typeof 操作符
+                            你可以使用 typeof 操作符来查看 JavaScript 变量的数据类型。
+                            
+                            实例
+                            typeof "John"                 // 返回 string 
+                            typeof 3.14                   // 返回 number
+                            typeof NaN                    // 返回 number
+                            typeof false                  // 返回 boolean
+                            typeof [1,2,3,4]              // 返回 object
+                            typeof {name:'John', age:34}  // 返回 object
+                            typeof new Date()             // 返回 object
+                            typeof function () {}         // 返回 function
+                            typeof myCar                  // 返回 undefined (如果 myCar 没有声明)
+                            typeof null                   // 返回 object
+                            
+                            尝试一下 »
+                            请注意：
+                            
+                            NaN 的数据类型是 number
+                            数组(Array)的数据类型是 object
+                            日期(Date)的数据类型为 object
+                            null 的数据类型是 object
+                            未定义变量的数据类型为 undefined
+                            如果对象是 JavaScript Array 或 JavaScript Date ，我们就无法通过 typeof 来判断他们的类型，因为都是 返回 object。
+                            
+                            constructor 属性
+                            constructor 属性返回所有 JavaScript 变量的构造函数。
+                            
+                            实例
+                            "John".constructor                 // 返回函数 String()  { [native code] }
+                            (3.14).constructor                 // 返回函数 Number()  { [native code] }
+                            false.constructor                  // 返回函数 Boolean() { [native code] }
+                            [1,2,3,4].constructor              // 返回函数 Array()   { [native code] }
+                            {name:'John', age:34}.constructor  // 返回函数 Object()  { [native code] }
+                            new Date().constructor             // 返回函数 Date()    { [native code] }
+                            function () {}.constructor         // 返回函数 Function(){ [native code] }
+                            
+                            尝试一下 »
+                            你可以使用 constructor 属性来查看对象是否为数组 (包含字符串 "Array"):
+                            
+                            实例
+                            function isArray(myArray) {
+                                return myArray.constructor.toString().indexOf("Array") > -1;
+                            }
+                    </pre>
+                    <a href="#" class="see">查看全部内容》</a>
+                </div>
+                <hr>
+            </div>
+            <div class="content-right grid-cell-2">
+                <iframe src="http://music.163.com/outchain/player?type=0&amp;id=80523986&amp;auto=1&amp;height=430"
+                    frameborder="no" marginwidth="0" marginheight="0" class="music"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+</html>
+</body>
